@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace tech
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            int r = int.Parse(Console.ReadLine());
+            int all = 0;
+            if (r > 10)
+            {
+                all = n * r;
+                Console.WriteLine($"{n} X {r} = {all}");
+            }
+            else
+            {
+                for (int i = r; i <= 10; i++)
+                {
+                    all = n * i;
+                    Console.WriteLine($"{n} X {i} = {all}");
+                }
+            }
+
+
+
+
+        }
+
+    }
+}
